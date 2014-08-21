@@ -42,7 +42,7 @@ void loop()
   
   const String s 
     = String(millis() / 1000)
-    + ":"
+    + ","
     + String(temperature)
     + ","
     + String(humidity)
