@@ -1,9 +1,9 @@
 #include <SD.h>
 
-const int pin_card_select{10}; //Must be 10, the shield requires it
-const int pin_chip_select{4};
-const int pin_thermistor{A0};
-const int pin_humidity{A1};
+const int pin_card_select = 10; //Must be 10, the shield requires it
+const int pin_chip_select = 4;
+const int pin_thermistor = A0;
+const int pin_humidity = A1;
 
 void setup() 
 {
@@ -37,8 +37,8 @@ void setup()
 
 void loop() 
 {
-  const int temperature{analogRead(pin_thermistor)}; 
-  const int humidity{analogRead(pin_humidity)}; 
+  const int temperature = analogRead(pin_thermistor);
+  const int humidity = analogRead(pin_humidity); 
   
   const String s 
     = String(millis() / 1000)
@@ -61,4 +61,3 @@ void loop()
   }
   delay(1000);
 }
-
